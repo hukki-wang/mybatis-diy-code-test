@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <datasource>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://172.16.116.120:3306/my_jdbc"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="123456"></property>
+    </datasource>
+
+    <mapper resource="UserMapper.xml"></mapper>
+</Configuration>

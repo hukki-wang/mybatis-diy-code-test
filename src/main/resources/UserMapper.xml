@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace = "com.hukki.example.mybatisframework.jdbc.domian.dao.IUserDao">
+    <!--sql的唯一标识由namespace+id标识，这个标识我们取名为statementId-->
+    <select id="findAll" resultType="com.hukki.example.mybatisframework.jdbc.domian.po.User">
+    select * from user;
+    </select>
+    <select id="findByCondition" resultType="com.hukki.example.mybatisframework.jdbc.domian.po.User" paramterType="com.hukki.example.mybatisframework.jdbc.domian.po.User">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+</mapper>
